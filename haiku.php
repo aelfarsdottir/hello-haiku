@@ -541,6 +541,8 @@ function RandomLine($fileinput)
                 <h2><span><?php echo $firstline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $secondline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $thirdline ?></span></h2>
             </div>
             
+            <br />
+            
             <form action="index.php" method="post">
                   <fieldset>
                       <div class="form-group">

@@ -35,53 +35,68 @@
           <form action="haiku.php" method="post">
               <fieldset>
                   <div class="form-group">
-                      <button class="btn btn-default" type="submit">
-                          <span aria-hidden="true"></span>
-                          Generate!
-                      </button>
+                      
                       
                     <div class="img">
                      <img src="../views/image1.jpg" alt="background" width="110" height="90"></a>
                      <input type="radio" name = "pick" class="radio" id="check1" value="../views/image1.jpg" />
-                     <div class="desc">lavender</div>
+                     <!--<div class="desc">lavender</div>-->
                     </div>   
                     
                     <div class="img">
                      <img src="../views/image2.jpg" alt="background" width="110" height="90"></a>
                      <input type="radio" name = "pick" class="radio" id="check2" value="../views/image2.jpg"/>
-                     <div class="desc">lagoon</div>
+                     <!--<div class="desc">lagoon</div>-->
                     </div>  
                     
                     <div class="img">
                      <img src="../views/image3.jpg" alt="background" width="110" height="90"></a>
                      <input type="radio" name = "pick" class="radio" id="check2" value="../views/image3.jpg"/>
-                     <div class="desc">lagoon</div>
+                     <!--<div class="desc">lagoon</div>-->
                     </div> 
                     
                     <div class="img">
                      <img src="../views/image4.jpg" alt="background" width="110" height="90"></a>
                      <input type="radio" name = "pick" class="radio" id="check2" value="../views/image4.jpg"/>
-                     <div class="desc">lagoon</div>
+                     <!--<div class="desc">lagoon</div>-->
                     </div> 
                     
                     <div class="img">
                      <img src="../views/image5.jpg" alt="background" width="110" height="90"></a>
                      <input type="radio" name = "pick" class="radio" id="check2" value="../views/image5.jpg"/>
-                     <div class="desc">lagoon</div>
+                     <!--<div class="desc">lagoon</div>-->
                     </div> 
                     
                     <div class="img">
                      <img src="../views/image6.jpg" alt="background" width="110" height="90"></a>
                      <input type="radio" name = "pick" class="radio" id="check2" value="../views/image6.jpg"/>
-                     <div class="desc">lagoon</div>
+                     <!--<div class="desc">lagoon</div>-->
                     </div> 
 
                     <div class="img">
                      <img src="../views/image7.jpg" alt="background" width="110" height="90"></a>
                      <input type="radio" name = "pick" class="radio" id="check2" value="../views/image7.jpg"/>
-                     <div class="desc">lagoon</div>
+                     <!--<div class="desc">lagoon</div>-->
                     </div> 
                       
+                    <div class="img">
+                     <img src="../views/image8.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image8.jpg"/>
+                     <!--<div class="desc">lagoon</div>-->
+                    </div> 
+                    
+                    <div class="img">
+                     <img src="../views/image9.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image9.jpg"/>
+                     <!--<div class="desc">lagoon</div>-->
+                    </div>
+                    
+                    <br /><br /><br /><br /><br />
+                    
+                    <button class="btn btn-default" type="submit">
+                          <span aria-hidden="true"></span>
+                          Generate!
+                    </button>  
                       
  
                   </div>
