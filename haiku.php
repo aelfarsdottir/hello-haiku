@@ -1,5 +1,5 @@
 <?php
-    
+
     $line1 = gent5sline();
     //add a puctuation
     $punc = rtrim(RandomLine("./wordbank/punc.txt"));
@@ -492,12 +492,17 @@ function RandomLine($fileinput)
 
 ?>
 
+
+
 <html>
     <head>
         <!-- http://getbootstrap.com/ -->
         <link href="../css/bootstrap.min.css" rel="stylesheet"/>
         <link href="../css/styles.css" rel="stylesheet"/>
         <title>Hello, Haiku</title>
+        
+        <!-- for passing in the chosen image -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
     
     <!--<div class="module">-->
@@ -514,18 +519,24 @@ function RandomLine($fileinput)
       <div class="container">
         <div id="top">
           <div>
-            <a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>
+            <a href="/"><img alt="Hello, Haiku" src="../views/logo2.png"/></a>
           </div>
         </div>
             
         <div id="middle">
-            <p></p><img src="http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>
+            <p></p>
+            <img src = <?php echo $_POST['pick']; ?> alt="chosen background" height="342" width="342"><p></p>
+            <!--
+            <img src="$("input[type="radio"][name="pick"]:checked").val();" alt="chosen background" height="342" width="342"><p></p>
             <br />
+            <img src="http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>
+            -->
+            
             <p><?php echo $firstline ?></p>
             <p><?php echo $secondline ?></p>
             <p><?php echo $thirdline ?></p>
             <br />
-            
+          
             <form action="haiku.php" method="post">
                   <fieldset>
                       <div class="form-group">

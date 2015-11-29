@@ -11,7 +11,7 @@
       <div class="container">
         <div id="top">
           <div>
-            <a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>
+            <a href="/"><img alt="Hello, Haiku" src="../views/logo2.png"/></a>
           </div>
         </div>
 
@@ -25,6 +25,49 @@
                           <span aria-hidden="true"></span>
                           Generate!
                       </button>
+                      
+                    <div class="img">
+                     <img src="../views/image1.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check1" value="../views/image1.jpg" />
+                     <div class="desc">lavender</div>
+                    </div>   
+                    
+                    <div class="img">
+                     <img src="../views/image2.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image2.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div>  
+                    
+                    <div class="img">
+                     <img src="../views/image3.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image3.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                    
+                    <div class="img">
+                     <img src="../views/image4.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image4.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                    
+                    <div class="img">
+                     <img src="../views/image5.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image5.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                    
+                    <div class="img">
+                     <img src="../views/image6.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image6.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+
+                    <div class="img">
+                     <img src="../views/image7.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image7.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                    
                   </div>
               </fieldset>
           </form>
@@ -34,6 +77,24 @@
         </div>
 
         <div id="bottom">
+          <!-- trying to add images -->
+          
+        
+          <!--
+          <div class="img">
+           <a target="_blank" href="klematis2_big.htm"><img src="../views/image2.jpg" alt="Klematis" width="110" height="90"></a>
+           <div class="desc">Add a description of the image here</div>
+          </div>
+          <div class="img">
+           <a target="_blank" href="klematis3_big.htm"><img src="klematis3_small.jpg" alt="Klematis" width="110" height="90"></a>
+           <div class="desc">Add a description of the image here</div>
+          </div>
+          <div class="img">
+           <a target="_blank" href="klematis4_big.htm"><img src="klematis4_small.jpg" alt="Klematis" width="110" height="90"></a>
+           <div class="desc">Add a description of the image here</div>
+          </div>
+          -->
+
           <!-- Brought to you by <a href="http://aelfarsdottir.github.io">Hello, Haiku</a>. -->
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
         </div>
