@@ -521,22 +521,22 @@ function RandomLine($fileinput)
         </div>
             
         <div id="middle">
-            <br /> 
+            <!--<br /> -->
             <!--<p></p><img src="http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>-->
-            <br />
-            <div class="module">
-                <header>
-            <h3><?php echo $firstline ?><br />
-            <?php echo $secondline ?><br />
-            <?php echo $thirdline ?></h3>
-                </header>
-            </div>
-            <br />
-            
-            <!--<div class="image">-->
-            <!--      <img src="images/3754004820_91a5c238a0.jpg" alt="" />-->
-            <!--      <h2>A Movie in the Park:<br />Kung Fu Panda</h2>-->
+            <!--<br />-->
+            <!--<div class="module">-->
+            <!--    <header>-->
+            <!--        <h3><?php echo $firstline ?><br />-->
+            <!--        <?php echo $secondline ?><br />-->
+            <!--        <?php echo $thirdline ?></h3>-->
+            <!--    </header>-->
             <!--</div>-->
+            <!--<br />-->
+            
+            <div class="image">
+                <img src="http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg" height="342" width="342"/>
+                <h2><span><?php echo $firstline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $secondline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $thirdline ?></span></h2>
+            </div>
             
             <form action="index.php" method="post">
                   <fieldset>
