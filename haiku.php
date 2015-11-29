@@ -533,6 +533,11 @@ function RandomLine($fileinput)
             </div>
             <br />
             
+            <!--<div class="image">-->
+            <!--      <img src="images/3754004820_91a5c238a0.jpg" alt="" />-->
+            <!--      <h2>A Movie in the Park:<br />Kung Fu Panda</h2>-->
+            <!--</div>-->
+            
             <form action="index.php" method="post">
                   <fieldset>
                       <div class="form-group">
