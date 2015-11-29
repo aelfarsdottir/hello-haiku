@@ -555,7 +555,7 @@ function RandomLine($fileinput)
             </form>
         </div>
         <div id="bottom">
-           Brought to you by <a href="https://ide50-tuonghuynh.cs50.io/">Hello, Haiku</a>. 
+           Brought to you by <a href="https://ide50-aelfarsdottir.cs50.io/">Hello, Haiku</a>. 
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
         </div>
       </div>

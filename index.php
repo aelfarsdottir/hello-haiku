@@ -113,18 +113,18 @@
         <div class="row">
 
             <div class="fb-like"
-              data-href="https://ide50-tuonghuynh.cs50.io" 
+              data-href="https://ide50-aelfarsdottir.cs50.io" 
               data-action="like" 
               data-layout="box_count"
               data-show-faces="false"></div>
         </div>
         <br/>
         
-        <div class="fb-share-button" data-href="https://ide50-tuonghuynh.cs50.io" data-layout="button"></div>
+        <div class="fb-share-button" data-href="https://ide50-aelfarsdottir.cs50.io" data-layout="button"></div>
 
     
         <div id="bottom">
-          <!-- Brought to you by <a href="http://tuonghuynh.github.io">Hello, Haiku</a>. -->
+          <!-- Brought to you by <a href="http://aelfarsdottir.github.io">Hello, Haiku</a>. -->
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
         </div>
       </div>
