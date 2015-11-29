@@ -207,3 +207,23 @@ h2 span {
 h2 span.spacer {
    padding: 0.5px;
 }
+
+div.img img {
+    /*display: inline;*/
+    margin: 5px;
+    /*border: 1px solid #ffffff;*/
+    position: relative; width: 100px; height: 100px; float: left; margin-left: 10px; 
+}
+
+div.img a:hover img {
+    border: 1px solid #0000ff;
+}
+
+div.img checkbox { position: absolute; bottom: 0px; right: 0px; }
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}

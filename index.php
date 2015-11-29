@@ -29,7 +29,8 @@
         <div id="middle">
           <p> Choose a background image for your haiku. </p>
           <br />
-          <p></p><img src="http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>
+  
+          
           <br></br>
           <form action="haiku.php" method="post">
               <fieldset>
@@ -38,6 +39,51 @@
                           <span aria-hidden="true"></span>
                           Generate!
                       </button>
+                      
+                    <div class="img">
+                     <img src="../views/image1.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check1" value="../views/image1.jpg" />
+                     <div class="desc">lavender</div>
+                    </div>   
+                    
+                    <div class="img">
+                     <img src="../views/image2.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image2.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div>  
+                    
+                    <div class="img">
+                     <img src="../views/image3.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image3.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                    
+                    <div class="img">
+                     <img src="../views/image4.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image4.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                    
+                    <div class="img">
+                     <img src="../views/image5.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image5.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                    
+                    <div class="img">
+                     <img src="../views/image6.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image6.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+
+                    <div class="img">
+                     <img src="../views/image7.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image7.jpg"/>
+                     <div class="desc">lagoon</div>
+                    </div> 
+                      
+                      
+ 
                   </div>
               </fieldset>
           </form>
@@ -45,13 +91,23 @@
           <!--<input name="myBtn" type="submit" value="Generate!" onclick="ajax_post();">-->
           <br></br>
         </div>
-        <div class="fb-share-button" data-href="https://ide50-tuonghuynh.cs50.io" data-layout="button_count"></div>
-        <p></p>
-        <div class="fb-like"
-          data-href="https://ide50-tuonghuynh.cs50.io" 
-          data-layout="standard" 
-          data-action="like" 
-          data-show-faces="false"></div>
+        
+        
+        
+        
+        <div class="row">
+
+            <div class="fb-like"
+              data-href="https://ide50-tuonghuynh.cs50.io" 
+              data-action="like" 
+              data-layout="box_count"
+              data-show-faces="false"></div>
+        </div>
+        <br/>
+        
+        <div class="fb-share-button" data-href="https://ide50-tuonghuynh.cs50.io" data-layout="button"></div>
+
+    
         <div id="bottom">
           <!-- Brought to you by <a href="http://tuonghuynh.github.io">Hello, Haiku</a>. -->
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
