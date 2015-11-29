@@ -26,9 +26,10 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg);
+    url(http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg);
   background-size: cover;
   font-family: 'Source Sans Pro', sans-serif;
+  
 }
 
 header {
@@ -40,10 +41,12 @@ header {
   text-align: center;
 }
 h1 {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin: 0;
-  font-size: 3rem;
   white-space: nowrap;
+  color: white;
+  font-size: 50px;
+  font-family: 'Cochin', sans-serif;
 }
 p {
   margin: 0;
@@ -51,7 +54,7 @@ p {
 }
 
 .module {
-  background: url(http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg);
+  background: url(http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg);
   background-attachment: fixed;
   width: 400px;
   height: 300px;
@@ -104,6 +107,8 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    color: white;
+
 }
 
 #top
@@ -119,11 +124,12 @@ p {
     display: inline-block;
 }
 
-#middle .form-control
+#middle 
+.form-control
 {
     /* center form controls */
     display: inline-block;
-
+    color: white;
     /* override Bootstrap's 100% width for form controls */
     width: auto;
 }
@@ -132,8 +138,23 @@ p {
 {
     /* shrink bottom's font size */
     font-size: smaller;
-
+    color: white;
     /* surround with whitespace */
     margin: 20px;
 }
 
+h3
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Cochin', sans-serif;
+}
+
+.fb-like
+{
+    text-align: center;
+}

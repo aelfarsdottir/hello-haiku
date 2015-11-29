@@ -8,10 +8,21 @@
     </head>
     
     <body>
+      
+      <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        
       <div class="container">
         <div id="top">
           <div>
-            <a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>
+            <h1> Hello, Haiku </h1>  
+            <!--<a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>-->
           </div>
         </div>
 
@@ -32,7 +43,14 @@
           <!--<input name="myBtn" type="submit" value="Generate!" onclick="ajax_post();">-->
           <br></br>
         </div>
-
+        <div class="fb-share-button" data-href="https://ide50-tuonghuynh.cs50.io" data-layout="button_count"></div>
+        <p></p>
+        <div class="fb-like"
+          data-href="https://ide50-tuonghuynh.cs50.io" 
+          data-layout="standard" 
+          data-action="like" 
+          data-show-faces="false">
+        </div>
         <div id="bottom">
           <!-- Brought to you by <a href="http://aelfarsdottir.github.io">Hello, Haiku</a>. -->
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>

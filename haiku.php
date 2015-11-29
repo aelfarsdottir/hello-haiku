@@ -514,16 +514,18 @@ function RandomLine($fileinput)
       <div class="container">
         <div id="top">
           <div>
-            <a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>
+            <br /> 
+            <h1> Hello, Haiku </h1>  
+            <!--<a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>-->
           </div>
         </div>
             
         <div id="middle">
-            <p></p><img src="http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>
+            <!--<p></p><img src="http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>-->
             <br />
-            <p><?php echo $firstline ?></p>
-            <p><?php echo $secondline ?></p>
-            <p><?php echo $thirdline ?></p>
+            <h3><?php echo $firstline ?></h3>
+            <h3><?php echo $secondline ?></h3>
+            <h3><?php echo $thirdline ?></h3>
             <br />
             
             <form action="haiku.php" method="post">
@@ -537,9 +539,8 @@ function RandomLine($fileinput)
                   </fieldset>
             </form>
         </div>
-
         <div id="bottom">
-           Brought to you by <a href="https://ide50-aelfarsdottir.cs50.io/">Hello, Haiku</a>. 
+           Brought to you by <a href="https://ide50-tuonghuynh.cs50.io/">Hello, Haiku</a>. 
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
         </div>
       </div>
