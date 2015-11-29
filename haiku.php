@@ -521,14 +521,19 @@ function RandomLine($fileinput)
         </div>
             
         <div id="middle">
+            <br /> 
             <!--<p></p><img src="http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>-->
             <br />
-            <h3><?php echo $firstline ?></h3>
-            <h3><?php echo $secondline ?></h3>
-            <h3><?php echo $thirdline ?></h3>
+            <div class="module">
+                <header>
+            <h3><?php echo $firstline ?><br />
+            <?php echo $secondline ?><br />
+            <?php echo $thirdline ?></h3>
+                </header>
+            </div>
             <br />
             
-            <form action="haiku.php" method="post">
+            <form action="index.php" method="post">
                   <fieldset>
                       <div class="form-group">
                           <button class="btn btn-default" type="submit">

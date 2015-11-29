@@ -27,6 +27,8 @@
         </div>
 
         <div id="middle">
+          <p> Choose a background image for your haiku. </p>
+          <br />
           <p></p><img src="http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>
           <br></br>
           <form action="haiku.php" method="post">
@@ -49,10 +51,9 @@
           data-href="https://ide50-tuonghuynh.cs50.io" 
           data-layout="standard" 
           data-action="like" 
-          data-show-faces="false">
-        </div>
+          data-show-faces="false"></div>
         <div id="bottom">
-          <!-- Brought to you by <a href="http://aelfarsdottir.github.io">Hello, Haiku</a>. -->
+          <!-- Brought to you by <a href="http://tuonghuynh.github.io">Hello, Haiku</a>. -->
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
         </div>
       </div>
