@@ -1,0 +1,139 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+ 
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+/*html { */
+/*  background: url(http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg) no-repeat center center fixed; */
+/*  -webkit-background-size: cover;*/
+/*  -moz-background-size: cover;*/
+/*  -o-background-size: cover;*/
+/*  background-size: cover;*/
+/*}*/
+
+/*
+https://css-tricks.com/design-considerations-text-images/ 
+*/
+
+body {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg);
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.module {
+  background: url(http://img11.deviantart.net/8f9c/i/2009/101/d/3/fuji_cherry_blossoms__by_zeroai.jpg);
+  background-attachment: fixed;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+.module > header {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  background: inherit;
+  background-attachment: fixed;
+}
+.module > header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+  transform: scale(2) translateY(20px);
+}
+
+.module > header > h1 {
+  margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.spacer 
+{
+  padding: 0.5px;
+}
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
