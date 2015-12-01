@@ -10,11 +10,12 @@
     {
       // extract variables into local scope
       extract($values);
-
       // render view (between header and footer)
       // require("../views/header.html");
       require("{$view}");
       // require("../views/footer.html");
+      // redirect to the page
+      // redirect("{$view}");
       exit;
     }
 
@@ -45,4 +46,10 @@
         exit;
     }
 
+
+  function apologize($message)
+    {
+        render("apologize.php", ["message" => $message]);
+        exit;
+    }
 ?>

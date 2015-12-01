@@ -1,37 +1,23 @@
 <?php
-    
-    $line1 = gent5sline();
-    //add a puctuation
-    $punc = rtrim(RandomLine("./wordbank/punc.txt"));
-    $firstline = $line1.$punc."\n";
-    // $firstline = $line1.$punc;
-    
-    $line2 = gent7sline();
-    $punc = rtrim(RandomLine("./wordbank/punc.txt"));
-    $secondline = $line2.$punc."\n";
-    // $secondline = $line2.$punc;
-    
-    $line3 = gent5sline();
-    // add a terminating punctuation
-    $puncf = rtrim(RandomLine("./wordbank/puncf.txt"));
-    $thirdline = $line3.$puncf."\n";
-    // $thirdline = $line3.$puncf;
-    
-    // $haiku = $firstline."\n".$secondline."\n".$thirdline;
-   
-    // echo $firstline;
-    // echo $secondline;
-    // echo $thirdline;
-    // echo $haiku = $firstline."\n".$secondline."\n".$thirdline;
-    //echo $haiku = $firstline.$secondline.$thirdline;
-    //echo $haiku = $firstline.$thirdline;
-    
-    // require("helpers.php");
-    // redirect("haiku.php");
-    // render("haiku.php", ["line1" => $firstline, "line2" => $secondline, "line3" => $thirdline, "title" => "Hello, Haiku"]);
 
-    // render("haiku.php", ["title" => "Hello, Haiku", "haiku" => $haiku]);
+    if ($_SERVER["REQUEST_METHOD"] == "GET")
+    {
+        // else render form
+        require("helpers.php");
+        redirect("index.php");
+    }
     
+    else if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        // validate submission
+        if (empty($_POST['pick']))
+        {
+            require("helpers.php");
+            apologize("Please choose a background image for your haiku.");
+        }
+        
+        else
+        {
 function gent5sline()
 {
     // Get random int and store inside variable
@@ -470,7 +456,6 @@ function option7_11()
     $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase; 
 }
-
 // get a random line, which is one word, from a file
 function RandomLine($fileinput) 
 {
@@ -489,6 +474,42 @@ function RandomLine($fileinput)
     
     return $string;
 }
+    
+            $line1 = gent5sline();
+            //add a puctuation
+            $punc = rtrim(RandomLine("./wordbank/punc.txt"));
+            $firstline = $line1.$punc."\n";
+            // $firstline = $line1.$punc;
+            
+            $line2 = gent7sline();
+            $punc = rtrim(RandomLine("./wordbank/punc.txt"));
+            $secondline = $line2.$punc."\n";
+            // $secondline = $line2.$punc;
+            
+            $line3 = gent5sline();
+            // add a terminating punctuation
+            $puncf = rtrim(RandomLine("./wordbank/puncf.txt"));
+            $thirdline = $line3.$puncf."\n";
+            // $thirdline = $line3.$puncf;
+            
+            // $haiku = $firstline."\n".$secondline."\n".$thirdline;
+           
+            // echo $firstline;
+            // echo $secondline;
+            // echo $thirdline;
+            // echo $haiku = $firstline."\n".$secondline."\n".$thirdline;
+            //echo $haiku = $firstline.$secondline.$thirdline;
+            //echo $haiku = $firstline.$thirdline;
+            
+            // require("helpers.php");
+            // redirect("haiku.php");
+            // render("haiku.php", ["line1" => $firstline, "line2" => $secondline, "line3" => $thirdline, "title" => "Hello, Haiku"]);
+        
+            // render("haiku.php", ["title" => "Hello, Haiku", "haiku" => $haiku]);
+
+        }
+    }
+
 
 ?>
 
