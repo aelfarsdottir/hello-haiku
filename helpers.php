@@ -6,16 +6,16 @@
  function render($view, $values = [])
  {
     // if view exists, render it
-    if (file_exists("{$view}"))
+    if (file_exists("../views/{$view}"))
     {
       // extract variables into local scope
       extract($values);
       // render view (between header and footer)
       // require("../views/header.html");
-      require("{$view}");
+      require("../views/{$view}");
       // require("../views/footer.html");
       // redirect to the page
-      // redirect("{$view}");
+      // redirect("../views/{$view}");
       exit;
     }
 
@@ -52,4 +52,5 @@
         render("apologize.php", ["message" => $message]);
         exit;
     }
+    
 ?>
