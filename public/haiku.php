@@ -18,7 +18,7 @@
             apologize("Please choose a background image for your haiku or paste an image url.");
         }
         
-        elseif (!empty($_POST['pick']) && !empty($_POST['imglink']))
+        if (!empty($_POST['pick']) && !empty($_POST['imglink']))
         {
             apologize("Please choose one option or the other.");
         }

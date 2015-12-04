@@ -29,14 +29,18 @@
               <fieldset>
                   
                     <div class="img">
-                     <img src="../img/image1.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check1" value="../img/image1.jpg" />
+                     <img src="../img/image1.jpg" alt="background" width="110" height="90">
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image1.jpg" />
+                    <!-- <label for="check2">-->
+                    <!--    <img src="../img/image1.jpg" alt="background" width="110" height="90">-->
+                    <!--</label>-->
+
                      <!--<div class="desc">lavender</div>-->
                     </div>
                     
                     <div class="img">
-                     <img src="../img/image2.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image2.jpg"/>
+                     <img src="../img/image12.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image12.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div>  
                     
@@ -84,12 +88,16 @@
                     
                     <br /><br /><br /><br /><br />
                     
-                    <p> Or paste a link to an image or gif of your choice: </p>
+                    <p> Or paste a link to an image and/or music of your choice:</p>
                     
                     <br />
                     
                     <div class="form-group">
-                        <input autocomplete="off" autofocus class="form-group" name="imglink" placeholder="" type="text"/>
+                        <input autocomplete="off" autofocus class="form-group" name="imglink" placeholder="Insert image link" type="text"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-group" name="musiclink" placeholder="Insert music link" type="text"/>
                     </div>
                     
                     <br /><br />
