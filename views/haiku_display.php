@@ -3,6 +3,10 @@
         <!-- http://getbootstrap.com/ -->
         <link href="../css/bootstrap.min.css" rel="stylesheet"/>
         <link href="../css/styles.css" rel="stylesheet"/>
+        <!--<link href="../css/styles_centeredtext3_44_07v2.css" rel="stylesheet"/>-->
+
+        <!--this is the version of css that someone helped me center the text yesterday, 12/4/15 3:44:07am in styles.css revision history-->
+        <!--<link href="../css/styles_centeredtext3_44_07.css" rel="stylesheet"/>-->
         <title>Hello, Haiku</title>
     </head>
     
@@ -32,6 +36,13 @@
                 { 
                     $background = $_POST['pick'];
                     
+                    if(!empty($_POST['musiclink']))
+                    {?>
+                        <audio autoplay controls="controls"><source src=<?php $_POST['musiclink'] ?> type="audio/mpeg" /></audio>
+                    <?php }
+                    ?>
+                    
+                    <?php 
                     if ($_POST['pick'] == "../img/image1.jpg")
                     { ?>
                         <audio autoplay controls="controls"><source src="./music/Peterpan.mp3" type="audio/mpeg" /></audio>
@@ -101,8 +112,12 @@
                     $background = $_POST['imglink']; ?>
                     <audio autoplay controls="controls"><source src="./music/forrest.mp3" type="audio/mpeg" /></audio>
                 <?php
-                }
-            ?>
+                    if (!empty($_POST['musiclink']))
+                    { ?>
+                        <audio autoplay controls="controls"><source src=$_POST['musiclink'] type="audio/mpeg" /></audio>
+                <?php
+                    }
+                } ?>
             
       <div class="container">
         <div id="top">
@@ -153,8 +168,8 @@
         </div>
         
         <div class="text">
-            <p>Love your haiku?! Take a screenshot because it'll disappear when you leave the page.</p>
-            <p> Don't forget to like and share Hello, Haiku on Facebook!</p>
+            <p> Love your haiku? Take a screenshot because it'll disappear when you leave the page.</p>
+            <p> Don't forget to like and share Hello, Haiku on Facebook! </p>
             </div>
             <br/>
             
