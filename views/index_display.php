@@ -9,119 +9,103 @@
     
     <body>
       
-      <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+        <audio autoplay controls="controls">
+            <source src="../music/forrest.mp3" type="audio/mp3" />
+        </audio>
         
       <div class="container">
         <div id="top">
           <div>
             <h1> Hello, Haiku </h1>  
-            <!--<a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>-->
+            <!--<a href="/"><img alt="Hello, Haiku" src="../img/logo.png"/></a>-->
           </div>
         </div>
 
         <div id="middle">
-          <p> Choose a background image for your haiku. </p>
+          <p> Choose a background image for your haiku: </p>
           <br />
-  
-          
-          <br></br>
+
           <form action="haiku.php" method="post">
               <fieldset>
-                  <div class="form-group">
-                      
-                      
+                  
                     <div class="img">
-                     <img src="../views/image1.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check1" value="../views/image1.jpg" />
+                     <img src="../img/image1.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check1" value="../img/image1.jpg" />
                      <!--<div class="desc">lavender</div>-->
-                    </div>   
+                    </div>
                     
                     <div class="img">
-                     <img src="../views/image2.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image2.jpg"/>
+                     <img src="../img/image2.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image2.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div>  
                     
                     <div class="img">
-                     <img src="../views/image3.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image3.jpg"/>
+                     <img src="../img/image3.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image3.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div> 
                     
                     <div class="img">
-                     <img src="../views/image4.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image4.jpg"/>
+                     <img src="../img/image4.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image4.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div> 
                     
                     <div class="img">
-                     <img src="../views/image5.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image5.jpg"/>
+                     <img src="../img/image5.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image5.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div> 
                     
                     <div class="img">
-                     <img src="../views/image6.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image6.jpg"/>
+                     <img src="../img/image6.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image6.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div> 
 
                     <div class="img">
-                     <img src="../views/image7.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image7.jpg"/>
+                     <img src="../img/image7.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image7.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div> 
                       
                     <div class="img">
-                     <img src="../views/image8.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image8.jpg"/>
+                     <img src="../img/image8.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image8.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div> 
                     
                     <div class="img">
-                     <img src="../views/image9.jpg" alt="background" width="110" height="90"></a>
-                     <input type="radio" name = "pick" class="radio" id="check2" value="../views/image9.jpg"/>
+                     <img src="../img/image9.jpg" alt="background" width="110" height="90"></a>
+                     <input type="radio" name = "pick" class="radio" id="check2" value="../img/image9.jpg"/>
                      <!--<div class="desc">lagoon</div>-->
                     </div>
                     
                     <br /><br /><br /><br /><br />
                     
+                    <p> Or paste a link to an image or gif of your choice: </p>
+                    
+                    <br />
+                    
+                    <div class="form-group">
+                        <input autocomplete="off" autofocus class="form-group" name="imglink" placeholder="" type="text"/>
+                    </div>
+                    
+                    <br /><br />
+                    
+                  <div class="form-group">
                     <button class="btn btn-default" type="submit">
                           <span aria-hidden="true"></span>
                           Generate!
-                    </button>  
-                      
- 
+                    </button>
                   </div>
               </fieldset>
           </form>
           <!--we want to submit the generate button click via POST in order to call draft.php and generate a haiku-->
           <!--<input name="myBtn" type="submit" value="Generate!" onclick="ajax_post();">-->
-          <br></br>
+          <br />
         </div>
-        
-        
-        
-        
-        <div class="row">
-
-            <div class="fb-like"
-              data-href="https://ide50-aelfarsdottir.cs50.io" 
-              data-action="like" 
-              data-layout="box_count"
-              data-show-faces="false"></div>
-        </div>
-        <br/>
-        
-        <div class="fb-share-button" data-href="https://ide50-aelfarsdottir.cs50.io" data-layout="button"></div>
-
     
         <div id="bottom">
           <!-- Brought to you by <a href="http://aelfarsdottir.github.io">Hello, Haiku</a>. -->

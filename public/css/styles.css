@@ -26,7 +26,7 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(../views/background.jpg);
+    url(../img/background.jpg);
   background-size: cover;
   font-family: 'Cochin', sans-serif;
   
@@ -54,7 +54,7 @@ p {
 }
 
 .module {
-  background: url(../views/background.jpg);
+  background: url(../img/background.jpg);
   width: 500px;
   height: 33%;
   padding: 15px;
@@ -148,6 +148,15 @@ p {
     width: auto;
 }
 
+.form-group
+{
+  /* center form controls */
+    display: inline-block;
+    color: black;
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
 #bottom
 {
     /* shrink bottom's font size */
@@ -201,8 +210,13 @@ h2 span {
 }
 
 .image { 
-   position: relative; 
-   width: 100%; /* for IE 6 */ 
+  position: relative; 
+  width: 100%; /* for IE 6 */
+  padding:1px;
+  border:1px solid rgba(5,4,2,0.4);
+  background-color: rgba(5,4,2,0.4);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 span.spacer {
@@ -216,10 +230,16 @@ h2 span.spacer {
     /*border: 1px solid #ffffff;*/
     position: relative; width: 100px; height: 100px; float: left; margin-left: 10px;
     /*position: relative; width: 100px; height: 100px; margin-left: 10px;*/
+    padding:1px;
+    border:1px solid rgba(5,4,2,0.4);
+    background-color:rgba(5,4,2,0.4);
 }
 
 .img a:hover img {
     border: 1px solid #0000ff;
+    /*padding:1px;*/
+    /*border:1px solid rgba(5,4,2,0.4);*/
+    /*background-color:rgba(5,4,2,0.4);*/
 }
 
 .radio {position: relative; bottom: 0px; right: 0px; }
