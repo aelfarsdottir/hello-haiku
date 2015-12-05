@@ -4,6 +4,7 @@
  * Picks words for haiku based on hard-coded options.
  */
  
+// randomly generate a random 5 syllable line
 function gent5sline()
 {
     // Get random int and store inside variable
@@ -56,8 +57,7 @@ function gent5sline()
     return $line;
 }
 
-
-
+// randomly generate a 7 syllable line
 function gent7sline()
 {
     // Get random int and store inside variable
@@ -134,12 +134,14 @@ function gent7sline()
     return $line;
 }
 
+// Call different word words depending on random number generated
 
 function option5_1()
 {
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j2.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/j2.txt");
@@ -157,6 +159,7 @@ function option5_2()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j4.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n1.txt");
@@ -173,14 +176,16 @@ function option5_3()
     // Define $line to store line
     $phrase = 0;
     
-    $word1 = RandomLine("../wordbank/v2.txt");
+    // Get random word from each file
+    $word1 = RandomLine("../wordbank/n2.txt");
     $word1 = rtrim($word1);
-    $word2 = RandomLine("../wordbank/b3.txt");
+    $word2 = RandomLine("../wordbank/v1.txt");
     $word2 = rtrim($word2);
+    $word3 = RandomLine("../wordbank/b2.txt");
+    $word3 = rtrim($word3);
     
     // Concatenate words into $line
-    $phrase = $word1 . " " . $word2;
-    
+    $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
 }
 
@@ -189,14 +194,16 @@ function option5_4()
     // Define $line to store line
     $phrase = 0;
     
-    $word1 = RandomLine("../wordbank/v3.txt");
+    // Get random word from each file
+    $word1 = RandomLine("../wordbank/j2.txt");
     $word1 = rtrim($word1);
-    $word2 = RandomLine("../wordbank/b2.txt");
+    $word2 = RandomLine("../wordbank/n1.txt");
     $word2 = rtrim($word2);
+    $word3 = RandomLine("../wordbank/v2.txt");
+    $word3 = rtrim($word3);
     
     // Concatenate words into $line
-    $phrase = $word1 . " " . $word2;
-    
+    $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
 }
 
@@ -205,6 +212,7 @@ function option5_5()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j3.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n2.txt");
@@ -221,6 +229,7 @@ function option5_6()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j1.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n1.txt");
@@ -241,6 +250,7 @@ function option5_7()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j2.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n3.txt");
@@ -258,6 +268,7 @@ function option7_1()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/p2.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/j2.txt");
@@ -266,8 +277,10 @@ function option7_1()
     $word3 = rtrim($word3);
     $word4 = RandomLine("../wordbank/n1.txt");
     $word4 = rtrim($word4);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3 . " ". $word4;
+    
     return $phrase;
 }
 
@@ -276,6 +289,7 @@ function option7_2()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j2.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n2.txt");
@@ -284,6 +298,7 @@ function option7_2()
     $word3 = rtrim($word3);
     $word4 = RandomLine("../wordbank/b1.txt");
     $word4 = rtrim($word4);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3 . " ". $word4;
     return $phrase;
@@ -295,10 +310,12 @@ function option7_3()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/p4.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n3.txt");
     $word2 = rtrim($word2);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2;
     return $phrase;
@@ -309,12 +326,14 @@ function option7_4()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j3.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/p3.txt");
     $word2 = rtrim($word2);
     $word3 = RandomLine("../wordbank/n1.txt");
     $word3 = rtrim($word3);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
@@ -325,12 +344,14 @@ function option7_5()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/n4.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/v1.txt");
     $word2 = rtrim($word2);
     $word3 = RandomLine("../wordbank/b2.txt");
     $word3 = rtrim($word3);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
@@ -341,12 +362,14 @@ function option7_6()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j4.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n2.txt");
     $word2 = rtrim($word2);
     $word3 = RandomLine("../wordbank/v1.txt");
     $word3 = rtrim($word3);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
@@ -358,12 +381,14 @@ function option7_7()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j2.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/n3.txt");
     $word2 = rtrim($word2);
     $word3 = RandomLine("../wordbank/v2.txt");
     $word3 = rtrim($word3);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
@@ -374,12 +399,16 @@ function option7_8()
     // Define $line to store line
     $phrase = 0;
     
-    $word1 = RandomLine("../wordbank/v4.txt");
+    // Get random word from each file
+    $word1 = RandomLine("../wordbank/n3.txt");
     $word1 = rtrim($word1);
-    $word2 = RandomLine("../wordbank/b3.txt");
+    $word2 = RandomLine("../wordbank/v2.txt");
     $word2 = rtrim($word2);
+    $word3 = RandomLine("../wordbank/b2.txt");
+    $word3 = rtrim($word3);
+    
     // Concatenate words into $line
-    $phrase = $word1 . " " . $word2;
+    $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
 }
 
@@ -388,12 +417,14 @@ function option7_9()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/j2.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/j3.txt");
     $word2 = rtrim($word2);
     $word3 = RandomLine("../wordbank/n2.txt");
     $word3 = rtrim($word3);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase;
@@ -404,6 +435,7 @@ function option7_10()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/p1.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/j2.txt");
@@ -412,6 +444,7 @@ function option7_10()
     $word3 = rtrim($word3);
     $word4 = RandomLine("../wordbank/n2.txt");
     $word4 = rtrim($word4);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3. " ". $word4;
     return $phrase; 
@@ -422,12 +455,14 @@ function option7_11()
     // Define $line to store line
     $phrase = 0;
     
+    // Get random word from each file
     $word1 = RandomLine("../wordbank/p4.txt");
     $word1 = rtrim($word1);
     $word2 = RandomLine("../wordbank/j1.txt");
     $word2 = rtrim($word2);
     $word3 = RandomLine("../wordbank/n2.txt");
     $word3 = rtrim($word3);
+    
     // Concatenate words into $line
     $phrase = $word1 . " " . $word2 . " " . $word3;
     return $phrase; 
@@ -436,10 +471,13 @@ function option7_11()
 function RandomLine($fileinput) 
 {
 
+    // check to see if file exists
     if (file_exists($fileinput))
     {
+        
         $sites = file($fileinput);
-        // $string = array_rand($sites, 1);
+        
+        // get random line (word) from the line
         $string = $sites[array_rand($sites, 1)];
     }
         

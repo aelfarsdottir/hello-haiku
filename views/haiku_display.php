@@ -1,25 +1,12 @@
+<!DOCTYPE html>
 <html>
     <head>
         <!-- http://getbootstrap.com/ -->
         <link href="../css/bootstrap.min.css" rel="stylesheet"/>
         <link href="../css/styles.css" rel="stylesheet"/>
-        <!--<link href="../css/styles_centeredtext3_44_07v2.css" rel="stylesheet"/>-->
-
-        <!--this is the version of css that someone helped me center the text yesterday, 12/4/15 3:44:07am in styles.css revision history-->
-        <!--<link href="../css/styles_centeredtext3_44_07.css" rel="stylesheet"/>-->
         <title>Hello, Haiku</title>
     </head>
     
-    <!--<div class="module">-->
-        <!--<header>-->
-            <h1><?php //echo $firstline ?></h1>
-        <!--    <br />-->
-            <h1><?php //echo $secondline ?></h1>
-        <!--    <br />-->
-            <h1><?php //echo $thirdline ?></h1>
-        <!--</header>-->
-    <!--</div>-->
-
     <body>
         
         <div id="fb-root"></div>
@@ -32,128 +19,119 @@
         }(document, 'script', 'facebook-jssdk'));</script>
         
         <?php 
-                if (!empty($_POST['pick']) && (empty($_POST['imglink'])))
-                { 
-                    $background = $_POST['pick'];
+        
+        if (!empty($_POST['pick']) && (empty($_POST['imglink'])))
+        { 
+            $background = $_POST['pick'];
                     
-                    if(!empty($_POST['musiclink']))
-                    {?>
-                        <audio autoplay controls="controls"><source src=<?php $_POST['musiclink'] ?> type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            if(!empty($_POST['musiclink']))
+            {?>
+                <audio autoplay controls="controls"><source src=<?php $_POST['musiclink'] ?> type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php 
-                    if ($_POST['pick'] == "../img/image1.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/Peterpan.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php 
+            if ($_POST['pick'] == "../img/image1.jpg")
+            { ?>
+                <audio autoplay controls="controls"><source src="./music/peterpan.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php
-                    if ($_POST['pick'] == "../img/image12.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/meadow.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php
+            if ($_POST['pick'] == "../img/image12.jpg")
+            { ?>
+                <audio autoplay controls="controls"><source src="./music/meadow.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php
-                    if ($_POST['pick'] == "../img/image3.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/hongkong.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php
+            if ($_POST['pick'] == "../img/image3.jpg")
+            { ?>
+                <audio autoplay controls="controls"><source src="./music/hongkong.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php
-                    if ($_POST['pick'] == "../img/image4.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/japan.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php
+            if ($_POST['pick'] == "../img/image4.jpg")
+                { ?>
+                <audio autoplay controls="controls"><source src="./music/japan.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
             
-                    <?php
-                    if ($_POST['pick'] == "../img/image5.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/chinese.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php
+            if ($_POST['pick'] == "../img/image5.jpg")
+            { ?>
+                <audio autoplay controls="controls"><source src="./music/chinese.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php
-                    if ($_POST['pick'] == "../img/image6.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/grandcanyon.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php
+            if ($_POST['pick'] == "../img/image6.jpg")
+            { ?>
+                <audio autoplay controls="controls"><source src="./music/grandcanyon.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php
-                    if ($_POST['pick'] == "../img/image7.jpg")
-                    {?>
-                        <audio autoplay controls="controls"><source src="./music/yosemite.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php
+            if ($_POST['pick'] == "../img/image7.jpg")
+            {?>
+                <audio autoplay controls="controls"><source src="./music/yosemite.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php
-                    if ($_POST['pick'] == "../img/image8.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/titanic.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                    ?>
+            <?php
+            if ($_POST['pick'] == "../img/image11.jpg")
+            {?>
+                <audio autoplay controls="controls"><source src="./music/turkey.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
                     
-                    <?php
-                    if ($_POST['pick'] == "../img/image9.jpg")
-                    { ?>
-                        <audio autoplay controls="controls"><source src="./music/paris.mp3" type="audio/mpeg" /></audio>
-                    <?php }
-                } ?>
+            <?php
+            if ($_POST['pick'] == "../img/image8.jpg")
+            { ?>
+                <audio autoplay controls="controls"><source src="./music/titanic.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            ?>
+                    
+            <?php
+            if ($_POST['pick'] == "../img/image9.jpg")
+            { ?>
+                <audio autoplay controls="controls"><source src="./music/paris.mp3" type="audio/mpeg" /></audio>
+            <?php }
+            } ?>
                 
                 
-                <?php 
-                if (empty($_POST['pick']) && (!empty($_POST['imglink'])))
-                { 
-                    $background = $_POST['imglink']; ?>
-                    <audio autoplay controls="controls"><source src="./music/forrest.mp3" type="audio/mpeg" /></audio>
+            <?php 
+            if (empty($_POST['pick']) && (!empty($_POST['imglink'])))
+            { 
+                $background = $_POST['imglink']; ?>
+                <audio autoplay controls="controls"><source src="./music/forrest.mp3" type="audio/mpeg" /></audio>
+                
                 <?php
-                    if (!empty($_POST['musiclink']))
-                    { ?>
-                        <audio autoplay controls="controls"><source src=$_POST['musiclink'] type="audio/mpeg" /></audio>
-                <?php
-                    }
-                } ?>
+                if (!empty($_POST['musiclink']))
+                { ?>
+                    <audio autoplay controls="controls"><source src=$_POST['musiclink'] type="audio/mpeg" /></audio>
+                <?php }
+            } ?>
             
       <div class="container">
         <div id="top">
           <div>
             <br /> 
             <h1> Hello, Haiku </h1>  
-            <!--<a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>-->
           </div>
         </div>
             
         <div id="middle">
-            <!--<br /> -->
-            <!--<p></p><img src="http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg" alt="Cherry Blossoms" height="342" width="342"><p></p>-->
-            <!--<br />-->
-            <!--<div class="module">-->
-            <!--    <header>-->
-            <!--        <h3><?php echo $firstline ?><br />-->
-            <!--        <?php echo $secondline ?><br />-->
-            <!--        <?php echo $thirdline ?></h3>-->
-            <!--    </header>-->
-            <!--</div>-->
-            <!--<br />-->
             
-        <div id="border-box">
-            <div class="image">
-                <img src = <?php echo $background; ?> alt="error displaying image; check url" align="middle" height="342" width="342"><p></p>
-                <!--
-                <img src="http://www.funmayo.com/wp-content/uploads/2015/09/Top-Most-Beautiful-Nature-Wallpaper.jpg" height="342" width="342"/>
-                -->
+            <div id="border-box">
+                <div class="image">
+                    <p><img src="<?php echo $background; ?>" alt="Error displaying image; check url." height="342" width="342"/></p>
+                </div>
+                <div id="textbox">
+                    <h2><span><?php echo $firstline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $secondline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $thirdline ?></span></h2>
+                </div>
             </div>
-            <div id="textbox">
-                <h2><span><?php echo $firstline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $secondline ?><span class='spacer'></span><br /><span class='spacer'></span><?php echo $thirdline ?></span></h2>
-            </div>
-        </div>
-            
-            <br />
             
             <form action="index.php" method="post">
                   <fieldset>
@@ -168,37 +146,26 @@
         </div>
         
         <div class="text">
-            <p> Love your haiku? Take a screenshot because it'll disappear when you leave the page.</p>
+            <p> Love your haiku?! </p>
             <p> Don't forget to like and share Hello, Haiku on Facebook! </p>
-            </div>
-            <br/>
+        </div>
+        <br/>
             
-            <div class="row">
-
+        <div class="row">
             <div class="fb-like"
-              data-href="https://ide50-aelfarsdottir.cs50.io" 
-              data-action="like" 
-              data-layout="button_count"
-              data-show-faces="true"></div>
+                data-href="https://ide50-aelfarsdottir.cs50.io" 
+                data-action="like" 
+                data-layout="button_count"
+                data-show-faces="true">
+            </div>
         </div>
         <br/>
         
         <div class="fb-share-button" data-href="https://ide50-aelfarsdottir.cs50.io" data-layout="button"></div>
         
-        <!--<form action="screenshot.php" method="post">-->
-        <!--          <fieldset>-->
-        <!--              <div class="form-group">-->
-        <!--                  <button class="btn btn-default" type="submit">-->
-        <!--                      <span aria-hidden="true"></span>-->
-        <!--                      Share a screenshot!-->
-        <!--                  </button>-->
-        <!--              </div>-->
-        <!--          </fieldset>-->
-        <!--    </form>-->
-            
         <div id="bottom">
            Brought to you by <a href="https://ide50-aelfarsdottir.cs50.io/">Hello, Haiku</a>. 
-          <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
+          <p> Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
         </div>
       </div>
     </body>

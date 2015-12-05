@@ -8,31 +8,30 @@
     </head>
     
     <body>
-        <div class="container">
+      <div class="container">
         <div id="top">
           <div>
             <h1> Hello, Haiku </h1>  
-            <!--<a href="/"><img alt="Hello, Haiku" src="../views/logo.png"/></a>-->
           </div>
         </div>
+        
         <div id="middle">
           <p><?php echo $message?></p>
           <br />
         </div>
-        
+      
         <form action="index.php" method="post">
-              <fieldset>
-                  <div class="form-group">
-                      <button class="btn btn-default" type="submit">
-                          <span aria-hidden="true"></span>
-                          Ok!
-                    </button>
-                    </div>
-              </fieldset>
-          </form>
+          <fieldset>
+              <div class="form-group">
+                <button class="btn btn-default" type="submit">
+                <span aria-hidden="true"></span>
+                  Ok!
+                </button>
+              </div>
+          </fieldset>
+        </form>
           
-          <div id="bottom">
-          <!-- Brought to you by <a href="http://aelfarsdottir.github.io">Hello, Haiku</a>. -->
+        <div id="bottom">
           <p>Copyright &copy; 2015 Hello, Haiku. All rights reserved.</p>
         </div>
       </div>

@@ -10,16 +10,18 @@
     {
       // extract variables into local scope
       extract($values);
+      
       // render view (between header and footer)
       // require("../views/header.html");
       require("../views/{$view}");
+      
       // require("../views/footer.html");
       // redirect to the page
       // redirect("../views/{$view}");
       exit;
     }
 
-    // else err
+    // else error
     else
     {
       trigger_error("Invalid view: {$view}", E_USER_ERROR);
@@ -36,21 +38,21 @@
   * must be called before caller outputs any HTML.
   */
 
+  // redirect users
   function redirect($location)
+  {
+    if (headers_sent($file, $line))
     {
-        if (headers_sent($file, $line))
-        {
-            trigger_error("HTTP headers already sent at {$file}:{$line}", E_USER_ERROR);
-        }
-        header("Location: {$location}");
-        exit;
+      trigger_error("HTTP headers already sent at {$file}:{$line}", E_USER_ERROR);
     }
+    header("Location: {$location}");
+    exit;
+  }
 
-
+ // error messages
   function apologize($message)
-    {
-        render("apologize.php", ["message" => $message]);
-        exit;
-    }
-    
+  {
+    render("apologize.php", ["message" => $message]);
+    exit;
+  }
 ?>

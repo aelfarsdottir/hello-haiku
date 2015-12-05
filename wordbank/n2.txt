@@ -20313,8 +20313,6 @@ traverse
 travois
 trawler
 trawlers
-traymobile
-traymobiles
 treader
 treaders
 treadle
@@ -20333,8 +20331,6 @@ treenail
 treenails
 treetop
 treetops
-trefoil
-trefoils
 treillage
 trekker
 trekkers
@@ -20352,15 +20348,7 @@ trenails
 trencher
 trenchers
 trendies
-trendy
-trental
-trentals
-trepan
-trepang
-trepangs
-trepans
-trephine
-trephines
+trend
 trespass
 tresses
 tressure
@@ -21783,7 +21771,6 @@ wolly
 wolver
 wolvers
 woman
-womans
 wombat
 wombats
 women

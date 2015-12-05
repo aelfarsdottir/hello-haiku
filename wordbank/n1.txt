@@ -4003,7 +4003,6 @@ serve
 serves
 sett
 setts
-sext
 sexts
 shack
 shacks
@@ -4311,8 +4310,6 @@ slurp
 slurps
 slurs
 slush
-slut
-sluts
 slype
 slypes
 smack

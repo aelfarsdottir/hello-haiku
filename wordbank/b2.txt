@@ -355,8 +355,6 @@ hither
 hoarsely
 homeward
 homewards
-hooly
-hotfoot
 hotly
 hottest
 hourlong
@@ -373,14 +371,10 @@ inchmeal
 incog
 indeed
 indoors
-inly
 inshore
 instead
 inward
 inwards
-ita
-iwis
-jimply
 jointly
 justly
 keenly
@@ -406,13 +400,11 @@ lengthways
 lengthwise
 lento
 lewdly
-lichtly
 lightly
 likely
 likewise
 limply
 lithely
-litho
 lively
 loathly
 longer
